@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('https://source.unsplash.com/1600x900/?nature,water');
+  background-size: cover;
+
+}
+
+.login-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 90%; /* Updated width for responsiveness */
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input-group label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.input-group input {
+  width: calc(100% - 40px);
+  padding: 15px;
+  padding-left: 40px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #fff;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.bottom-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bottom-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.bottom-text a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .login-container {
+    padding: 20px;
+  }
+}
+
+.validation-message {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #aaa;
+    }
+
+/* Add these styles at the end of your existing CSS */
+/* Add these styles at the end of your existing CSS */
+/* Add these styles at the end of your existing CSS */
+.social-icon {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 10px;
+  font-size: 24px; /* Adjust size as needed */
+  color: #007bff; /* Default color */
+  transition:  0.3s all ease-in-out; /* Smooth transition for color */
+  position: relative;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  color: #0056b3; 
+  border-bottom: 3px solid #aaa;/* Hover color */
+}
+
+.social-icon:active {
+  color: #003e80; /* Active color */
+}
+
+.social-icon i {
+  position: relative;
+}
+
+.social-icon:hover i { 
+    padding: 10px;
+     /* Border radius */
+   /* Adjust padding as needed */
+}
